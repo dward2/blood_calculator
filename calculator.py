@@ -57,6 +57,19 @@ def analyze_LDL_result(LDL_test_value):
     else:
         return "Very high"
 
+def total_driver():
+    total_result = get_test_result_input("Total Cholesterol")
+    total_analysis = analyze_total_result(total_result)
+    output_test_analysis("Total Cholesterol", total_result, total_analysis)
+    
+def analyze_total_result(total_test_value):
+    if total_test_value < 200:
+        return "Normal"
+    elif 200 <= total_test_value < 240:
+        return "Borderline high"
+    else:
+        return "High"
+
 
 interface()
 
