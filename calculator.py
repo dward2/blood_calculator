@@ -1,6 +1,7 @@
 def interface():
-    print("My Program")
+    print("Blood Analysis Program")
     while True:
+        print("")
         print("Options for you")
         print("1 - HDL")
         print("2 - LDL")
