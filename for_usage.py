@@ -1,4 +1,4 @@
-foods = ["apples", "bananas", "cherries", "donuts", "egglant", "cherries"]
+foods = ["apples", "bananas", "cherries", "donuts", "egglant", "cherries", "java"]
 
 amounts = [11, 22, 33, 44, 55, 66]
 
