@@ -16,7 +16,8 @@ def interface():
             LDL_driver()
         elif choice == '3':
             total_driver()
-            
+
+
 def HDL_driver():
    # Get input
    HDL_result = get_test_result_input("HDL")
@@ -70,6 +71,6 @@ def analyze_total_result(total_test_value):
     else:
         return "High"
 
-
-interface()
+if __name__ == "__main__":
+    interface()
 
