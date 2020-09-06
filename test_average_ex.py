@@ -6,7 +6,7 @@ import pytest
     ([-2, -1, 0, 1, 2], 0),
     ([3], 3)
     ])
-def my_average(list_to_ave, expected):
+def test_my_average(list_to_ave, expected):
     from average_ex import my_average
     answer = my_average(list_to_ave)
     assert answer == expected
