@@ -19,22 +19,24 @@ def interface():
 
 
 def HDL_driver():
-   # Get input
-   HDL_result = get_test_result_input("HDL")
-   # Check if HDL is normal
-   HDL_analysis = analyze_HDL_result(HDL_result)
-   # Output
-   output_test_analysis("HDL", HDL_result, HDL_analysis)
-   
+    # Get input
+    HDL_result = get_test_result_input("HDL")
+    # Check if HDL is normal
+    HDL_analysis = analyze_HDL_result(HDL_result)
+    # Output
+    output_test_analysis("HDL", HDL_result, HDL_analysis)
+
+
 def get_test_result_input(test_name):
     test_result = input(f"Enter the {test_name} result: ")
     return int(test_result)
-    
+
+
 def output_test_analysis(test_name, test_result, analysis):
     print("The {} result is {}".format(test_name, test_result))
     print("That is {}".format(analysis))
-    
-    
+
+
 def analyze_HDL_result(HDL_test_value):
     if HDL_test_value >= 60:
         return "Normal"
@@ -43,11 +45,13 @@ def analyze_HDL_result(HDL_test_value):
     else:
         return "Low"
 
+
 def LDL_driver():
     LDL_result = get_test_result_input("LDL")
     LDL_analysis = analyze_LDL_result(LDL_result)
     output_test_analysis("LDL", LDL_result, LDL_analysis)
-            
+
+
 def analyze_LDL_result(LDL_test_value):
     if LDL_test_value < 130:
         return "Normal"
@@ -58,11 +62,13 @@ def analyze_LDL_result(LDL_test_value):
     else:
         return "Very high"
 
+
 def total_driver():
     total_result = get_test_result_input("Total Cholesterol")
     total_analysis = analyze_total_result(total_result)
     output_test_analysis("Total Cholesterol", total_result, total_analysis)
-    
+
+
 def analyze_total_result(total_test_value):
     if total_test_value < 200:
         return "Normal"
@@ -71,6 +77,6 @@ def analyze_total_result(total_test_value):
     else:
         return "High"
 
+
 if __name__ == "__main__":
     interface()
-
