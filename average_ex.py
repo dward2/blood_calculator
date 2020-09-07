@@ -1,7 +1,7 @@
 def my_average(input_list):
     sum = 0;
     for item in input_list:
-        sum += int(item)
+        sum += float(item)
     average = sum / len(input_list)
     return average
     

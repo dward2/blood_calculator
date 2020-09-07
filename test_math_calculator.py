@@ -9,4 +9,4 @@ import pytest
 def test_add(a, b, expected):
     from math_calculator import add
     answer = add(a, b)
-    assert answer == expected
+    assert pytest.approx(answer) == expected

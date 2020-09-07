@@ -1,6 +1,8 @@
 def is_fruit(fruit_check):
     fruit_list = ["banana", "apple", "pear", "peach"]
-    fruit_exists = fruit_check in fruit_list
+    fruit_check = fruit_check.strip(" ")
+    fruit_check = fruit_check.rstrip("s")
+    fruit_exists = fruit_check.lower() in fruit_list
     return fruit_exists
 
 
