@@ -2,9 +2,8 @@ def my_average(input_list):
     sum = 0
     for item in input_list:
         sum += float(item)
-    average = sum / len(input_list)
+    average = sum/len(input_list)
     return average
-
 
 if __name__ == "__main__":
     print("Enter numbers to include in average."
@@ -19,3 +18,6 @@ if __name__ == "__main__":
             keep_running = False
     average = my_average(numbers_to_average)
     print("The average is {}".format(average))
+
+    
+    
